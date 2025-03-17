@@ -1,12 +1,14 @@
 pipeline {
     agent any
-
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/SahilBhostekar/java-factorial.git' // Replace with your repo URL
+                git branch: 'main', url: 'https://github.com/SahilBhostekar/java-factorial.git'
             }
         }
+    }
+}
+
 
         stage('Build') {
             steps {
