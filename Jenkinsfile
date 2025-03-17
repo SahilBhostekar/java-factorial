@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/your-username/java-factorial.git' // Replace with your repo URL
+                git 'https://github.com/SahilBhostekar/java-factorial.git' // Replace with your repo URL
             }
         }
 
@@ -24,7 +24,7 @@ pipeline {
             steps {
                 emailext subject: "Jenkins Build Successful",
                     body: "The Jenkins pipeline for the Factorial application has completed successfully.",
-                    to: 'your-email@gmail.com'
+                    to: 'bhostekarsahil24@gmail.com'
             }
         }
     }
