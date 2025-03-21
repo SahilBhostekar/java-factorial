@@ -22,7 +22,7 @@ pipeline {
 
         stage('Post Build Notification') {
             steps {
-                mail to: 'your-bhostekarsahil24@gmail.com',
+                mail to: 'your-2024.sahil.bhostekar@ves.ac.in',
                      subject: "Build Successful",
                      body: "The Jenkins pipeline build was successful."
             }
